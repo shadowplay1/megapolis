@@ -3,13 +3,13 @@
 '''
 
 '''
-Структура данных в таблице:
+Структура данных в таблице (используем `students.csv`):
     - id (int) - ID записи в таблице (index = 0)
     - fio (str) - ФИО ученика (index = 1)
     - project_id (int) - ID проекта (index = 2)
     - class (str) - класс + буква класса, в котором учится ученик (index = 3)
     - student_id (int) - ID ученика (index = 4)
-    - score (int) - оценка ученика за поект (index = 5)
+    - score (int) - оценка ученика за проект (index = 5)
 '''
 
 from typing import Union
@@ -20,7 +20,7 @@ data: list[list[Union[str, int]]] = []
 
 
 for line in file:
-    line = line.replace('\n', '')
+    line: str = line.replace('\n', '')
     splitted: list[str] = line.split(',')
 
     for i in range(len(splitted)):
