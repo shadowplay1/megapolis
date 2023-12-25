@@ -54,7 +54,7 @@ for i in range(len(data)):
 
 
 new_file = open('data/students_task_5.csv', 'a') # создаём в папке 'data' новый csv-файл и открываем его для чтения
-new_file_content = head # мы не добавляем сюда символ переноса строки \n, так как он уже содержится в 'head'
+new_file_content = head # мы не добавляем сюда символ переноса строки \n, так как он уже содержится в конце 'head'
 
 
 for i in range(len(data)):
