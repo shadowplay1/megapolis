@@ -96,7 +96,7 @@ $ git push
 # Первоначальная настройка
 
 $ git init # создать локальный репозиторий
-$ git remote add origin <remote-repository-url> # соединить локальный репозиторий с удалённым
+$ git remote add origin <remote-repository-url>.git # соединить локальный репозиторий с удалённым
 
 
 # Добавление локальных изменений
