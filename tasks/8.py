@@ -37,6 +37,10 @@ data = data[1:]
 
 
 def find_project(project_id: int) -> Optional[list[Union[str, int]]]:
+    '''Находит проект по указанному ID.
+
+    Описание аргументов:
+    - project_id (int) - ID, по которому необходимо найти проект'''
     for i in range(len(data)):
         if data[i][n] == project_id:
             return data[i]
