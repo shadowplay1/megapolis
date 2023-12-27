@@ -63,7 +63,7 @@ for i in range(len(data)):
 
     new_file_content += ','.join(data[i]) + '\n'
 
-new_file.write(new_file_content) # записываем наши обновлённые данные в раннее созданный csv-файл
+new_file.write(new_file_content) # записываем обновлённые данные в раннее созданный csv-файл
 
 
 for item in data[:10]:
